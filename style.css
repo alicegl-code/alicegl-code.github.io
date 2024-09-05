@@ -1,0 +1,108 @@
+/* need to add a link tag to html to link to css in head tag as this is read in */
+/* to change background of whole website need to target body */
+body{
+    font-family: Helvetica, Arial, sans-serif; 
+     /*the below removes the white space around the edge of the page  */
+    margin: 0px;
+/* margin 0px is removing the white border in each section which is assigned a colour to all four edges*/
+font-size: 1.5vw;
+}
+
+/* Header  */
+body > header {
+    background-color: #ccc3b9 ;
+    /* text colour */
+    color: white;
+    /* font size is relative to view screen */
+    font-size: 1.5vw;
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbutton{
+    padding: 10px;
+    margin: 16px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+/* applying unique font styles: need to add link from google fonts into HTML. if the name of the font is two words need to put in speech marks */
+#logo {
+    margin: 0px;
+    padding: 10px;
+    font-family: "Lilita One", sans-serif; 
+    text-shadow:
+    1px 1px 0px grey,
+    -1px 1px 0px grey, 
+    1px -1px 0px grey,
+    -1px -1px 0px grey;   
+}
+
+
+/* Main text */
+body > main  article {
+    width: 70%;
+    /* to centralise all text */
+    margin: auto;
+}
+
+#maincontent {
+    display: flex;
+    justify-content: space-around;
+}
+
+#maincontent > div{
+    width: 70%;
+}
+
+#maincontent aside{
+    width: 20%;
+}
+
+/* Form */
+form {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+/* changing images to circle shape */
+img {
+    border-radius: 50%;
+}
+
+
+
+/* Main page Footer */
+body > footer {
+    background-color: #ccc3b9;
+    display: flex;
+}
+ul {
+    margin: 0px;
+}
+
+#footerul {
+    display: flex;
+    list-style: none;
+}
+
+#footerul > div > li {
+    margin-left: 12px;
+
+}
+
+#footerul > div > li > a{
+    text-decoration: none;
+    color: white;
+}
+
