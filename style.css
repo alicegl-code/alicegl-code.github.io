@@ -8,64 +8,212 @@ body{
 font-size: 1.5vw;
 }
 
+
+
 /* Header  */
-body > header {
-    background-color: #ccc3b9 ;
-    /* text colour */
-    color: white;
-    /* font size is relative to view screen */
-    font-size: 1.5vw;
-    display: flex;
-    height: 7vh;
-    align-items: center;
-    justify-content: space-around;
+
+.mainheader {
+    position: relative;
+    margin: 0%;
+    padding: 20px;
+    
 }
 
-.nav{
-    display: flex;
-    padding: 10px;
-    list-style: none;
+.marketing {
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #b36c65;
+    text-align: center;
+    font-family: "Gilda+Display";
+    letter-spacing: 30px;
+    font-weight: lighter;
+    z-index: 1;
+    position: relative;
+    top: 80px;
 }
 
-.navbutton{
-    padding: 10px;
-    margin: 16px;
-    border: 1px solid white;
-    border-radius: 10%;
-}
-
-/* applying unique font styles: need to add link from google fonts into HTML. if the name of the font is two words need to put in speech marks */
-#logo {
-    margin: 0px;
-    padding: 10px;
-    font-family: "Lilita One", sans-serif; 
+.alice {
+    font-size: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F9F1F0;
+    font-family: "Gilda+Display";
+    font-weight: lighter;
+    letter-spacing: 5px;
     text-shadow:
-    1px 1px 0px grey,
-    -1px 1px 0px grey, 
-    1px -1px 0px grey,
-    -1px -1px 0px grey;   
+        2px 0 0 #F0C0BF,   
+        4px 0 0 #F0C0BF,   
+        6px 0 0 #F0C0BF;  
+    position: relative; 
+    z-index: 1;
+    top: 80px;
 }
+
+.portfolio { 
+    font-size: 15vw;
+    font-family: "Allura";
+    font-weight: 100;
+    font-style: italic;
+    color: #b36c65;
+    letter-spacing: 5px;
+    position: relative;
+    top: 10px;
+    z-index: 0;
+    padding: 0%;
+    margin: 0%;
+}
+    
+
+/* Navigation bar  */
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+.navbutton {
+    color: white;
+    text-decoration: none;
+}
+
+/* attempt at making naviagation bar horizontal */
+/* removing default listing style and using display flex for horizontal listing*/
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5px;
+    justify-content: center;
+    grid-area: nav;
+}
+/* styling the list to be centralised */
+.nav li {
+    position: relative;
+    margin: 0; 
+}
+
+
+
+
+/* adding hover effect for links */
+.navbutton:hover {
+    background-color: #fadcd9;
+    color: white;
+    border-color: white;
+}
+
+.navbutton {
+    /* removing underlines from links */
+    text-decoration: none;
+    /* setting link colour */
+    color: white;
+    /* adding space for clickable links */
+    padding: 10px 15px;
+    /* making the links block elements */
+    display: block;
+    
+}
+
+/* adding lines between nav list */
+.nav li:not(:last-child)::after{
+ /* required to display pseudo-element */
+content: "";
+/* Position it relative to list items */
+position: absolute;
+/* alight to right edge of item */
+right: 0;
+/* slightly offset to top */
+top: 10%;
+/* adjust line height */
+height: 80%;
+/* set line style and colour */
+border-right: 1px solid white;
+
+}
+
+
+
+
+
+
+/* Introduction  */
+
+
+
+.aboutme {
+    text-align: left;
+    font-size: 5vw;
+    font-family: "Gilda+Display";
+    color: #b36c65;
+    margin: 0%;
+    padding: 40px;
+    letter-spacing: 1px;
+    
+}
+
+.thisis {
+    text-align: left;
+    font-family: "Gilda+Display";
+    margin: 30pt;
+    color: #b36c65;
+}
+
+.summary{
+    text-align: left;
+    margin: 40px;
+    
+}
+
+
+
+.signature {
+    text-align: left;
+    font-family: "Dancing Script";
+    font-size: 3vw;
+    margin: 30pt;
+    color: #b36c65;
+}
+
+.profilepic {
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Main text */
-body > main  article {
-    width: 70%;
-    /* to centralise all text */
-    margin: auto;
+body > main article {
+    grid-area: mainarticle;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-#maincontent {
-    display: flex;
-    justify-content: space-around;
+.EAD {
+    background-color: antiquewhite;
+
 }
 
-#maincontent > div{
-    width: 70%;
+.EAD > header > h2 {
+    font-family: "Lilita One", sans-serif;
+    color: white;
+    text-shadow:
+    1px 1px 0px #f79489,
+    -1px 1px 0px #f79489, 
+    1px -1px 0px #f79489,
+    -1px -1px 0px #f79489;
+    padding: 10px;
 }
 
-#maincontent aside{
-    width: 20%;
-}
 
 /* Form */
 form {
@@ -75,17 +223,24 @@ h2 {
     text-align: center;
 }
 
-/* changing images to circle shape */
-img {
-    border-radius: 50%;
-}
+
 
 
 
 /* Main page Footer */
 body > footer {
-    background-color: #ccc3b9;
+    background-color: #f79489 ;
+    /* text colour */
+    color: white;
+    /* font size is relative to view screen */
+    font-size: 1.5vw;
     display: flex;
+    height: 9vh;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    display: flex;
+    grid-area: footer;
 }
 ul {
     margin: 0px;
@@ -106,3 +261,14 @@ ul {
     color: white;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas: none
+    "header header"
+    "nav nav"
+    "summary summary"
+    "main article main article"
+    "footer footer"
+    ;
+    grid-template-columns: 3fr 7fr;
+}
