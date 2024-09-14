@@ -208,6 +208,25 @@ body > header > nav > ul {
     padding-top: 40px; 
 }
 
+/* Education Section */
+
+.educationgrid {
+    display: grid;
+    grid-template-areas: 
+    "title details ";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.educationtitle {
+    grid-area: title;
+    font-size: 2.5vw;
+    font-family: "Gilda+Display";
+    color: #b36c65;
+
+}
+
+
 
 
 
