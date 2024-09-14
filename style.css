@@ -17,6 +17,7 @@ font-size: 1.5vw;
     margin: 0%;
     padding: 20px;
     
+    
 }
 
 .marketing {
@@ -62,16 +63,17 @@ font-size: 1.5vw;
     padding: 0%;
     margin: 0%;
 }
-    
 
-/* Navigation bar  */
+
+/* Navigation bar */
+
 body > header > nav > ul {
     list-style: none;
     text-decoration: none;
     
 }
 .navbutton {
-    color: white;
+    color: #b36c65;
     text-decoration: none;
 }
 
@@ -82,137 +84,66 @@ body > header > nav > ul {
     margin: 0;
     padding: 0;
     display: flex;
-    border: 2px solid white;
+    border: 2px solid #F0C0BF;
     border-radius: 5px;
     justify-content: center;
     grid-area: nav;
+
+    
 }
 /* styling the list to be centralised */
 .nav li {
     position: relative;
     margin: 0; 
+    padding: 10px;
 }
-
-
-
 
 /* adding hover effect for links */
 .navbutton:hover {
     background-color: #fadcd9;
-    color: white;
-    border-color: white;
-}
-
-.navbutton {
-    /* removing underlines from links */
-    text-decoration: none;
-    /* setting link colour */
-    color: white;
-    /* adding space for clickable links */
-    padding: 10px 15px;
-    /* making the links block elements */
-    display: block;
-    
-}
-
-/* adding lines between nav list */
-.nav li:not(:last-child)::after{
- /* required to display pseudo-element */
-content: "";
-/* Position it relative to list items */
-position: absolute;
-/* alight to right edge of item */
-right: 0;
-/* slightly offset to top */
-top: 10%;
-/* adjust line height */
-height: 80%;
-/* set line style and colour */
-border-right: 1px solid white;
-
+    border-color: #fadcd9;
 }
 
 
 
 
+/* About me */
 
+/* Setting grid layout */
+.aboutmegrid {
+    display: grid;
+    grid-template-areas:
+    "aboutme image";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
 
-/* Introduction  */
+}
 
+.aboutmegrid > img {
+    width: 100%;
+    grid-area: image;
+}
 
+.aboutmetext {
+    grid-area: aboutme;
+}
 
-.aboutme {
+.aboutme > h2 {
     text-align: left;
-    font-size: 5vw;
-    font-family: "Gilda+Display";
-    color: #b36c65;
-    margin: 0%;
-    padding: 40px;
-    letter-spacing: 1px;
-    
-}
-
-.thisis {
-    text-align: left;
-    font-family: "Gilda+Display";
-    margin: 30pt;
-    color: #b36c65;
-}
-
-.summary{
-    text-align: left;
-    margin: 40px;
-    
-}
-
-
-
-.signature {
-    text-align: left;
-    font-family: "Dancing Script";
+    padding-left: 20px;
     font-size: 3vw;
-    margin: 30pt;
+    font-family: "Gilda+Display";
     color: #b36c65;
+    letter-spacing: 1px;
 }
 
-.profilepic {
+.aboutme > h3 {
     
 }
 
 
 
-
-
-
-
-
-
-
-
-/* Main text */
-body > main article {
-    grid-area: mainarticle;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.EAD {
-    background-color: antiquewhite;
-
-}
-
-.EAD > header > h2 {
-    font-family: "Lilita One", sans-serif;
-    color: white;
-    text-shadow:
-    1px 1px 0px #f79489,
-    -1px 1px 0px #f79489, 
-    1px -1px 0px #f79489,
-    -1px -1px 0px #f79489;
-    padding: 10px;
-}
 
 
 /* Form */
@@ -261,14 +192,3 @@ ul {
     color: white;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas: none
-    "header header"
-    "nav nav"
-    "summary summary"
-    "main article main article"
-    "footer footer"
-    ;
-    grid-template-columns: 3fr 7fr;
-}
