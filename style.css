@@ -116,8 +116,6 @@ body > header > nav > ul {
     "aboutme image";
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 20px;
-
 }
 
 .aboutmegrid > img {
@@ -136,13 +134,28 @@ body > header > nav > ul {
     font-family: "Gilda+Display";
     color: #b36c65;
     letter-spacing: 1px;
+    margin: 0%;
+    padding-bottom: 10px;
+    padding-top: 40px;
 }
 
 .aboutme > h3 {
-    
+    text-align: left;
+    padding-left: 20px;
+    color: #b36c65;
+    font-family: "Gilda+Display";
+    margin: 0px;
 }
 
+.aboutmetext {
+    text-align: left;
+    padding-left: 20px;
+    color: black;
+    font-family: "Gilda+Display";
+    margin: 0px;
+    font-size: 1.5vw;
 
+}
 
 
 
