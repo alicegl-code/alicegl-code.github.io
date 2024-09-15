@@ -238,6 +238,12 @@ body > header > nav > ul {
     color: #b36c65;
 }
 
+.education {
+    padding-bottom: 50px;
+}
+
+
+
 
 /* Qualifications and Certifications */
 
@@ -246,7 +252,9 @@ body > header > nav > ul {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background-color: #dfd3ca;
 }
 
 .grid-item {
@@ -257,18 +265,42 @@ body > header > nav > ul {
 }
 
 .caption {
-    margin-bottom: 10px;
-    font-weight: bold;
+    margin-bottom: 20px;
+    font-family:"Gilda+Display";
+    font-size: 1.75vw;
+    color: white;
+    text-shadow: 10px 0px 15px #F0C0BF;
+
 }
 
 .grid-item img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 9.5vwpx;
 }
 
 
 
+.qualifications > h2 { 
+    color: #b36c65;
+    font-family: "Gilda+Display";
+    font-size: 3.5vw;
+    padding-bottom: 30px;
+}
+
+
+/* Skills section */
+.skills > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Graphic design examples */
+.graphics > img {
+    width: 100%;
+    height: auto;
+    margin: 50px;
+}
 
 /* Form */
 form {
@@ -284,7 +316,7 @@ h2 {
 
 /* Main page Footer */
 body > footer {
-    background-color: #f79489 ;
+    background-color: #dfd3ca;
     /* text colour */
     color: white;
     /* font size is relative to view screen */
@@ -296,6 +328,8 @@ body > footer {
     padding-top: 10px;
     display: flex;
     grid-area: footer;
+    padding-bottom: 40px;
+    margin-top: 30px;
 }
 ul {
     margin: 0px;
