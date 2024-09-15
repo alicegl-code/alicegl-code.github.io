@@ -216,6 +216,7 @@ body > header > nav > ul {
     "title details ";
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 0;
 }
 
 .educationtitle {
@@ -224,13 +225,47 @@ body > header > nav > ul {
     font-family: "Gilda+Display";
     color: #b36c65;
 
+
+}
+
+.educationdetails { 
+    grid-area: details;
+    font-family: "Gilda+Display";
 }
 
 
+.educationdetails > ul > h4 { 
+    color: #b36c65;
+}
 
 
+/* Qualifications and Certifications */
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
 
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
 
 
 
