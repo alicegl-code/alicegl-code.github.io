@@ -4,8 +4,9 @@ body{
     font-family: Helvetica, Arial, sans-serif; 
      /*the below removes the white space around the edge of the page  */
     margin: 0px;
+    padding: 0px;
 /* margin 0px is removing the white border in each section which is assigned a colour to all four edges*/
-font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 
@@ -30,7 +31,7 @@ font-size: 1.5vw;
     font-weight: lighter;
     z-index: 1;
     position: relative;
-    top: 80px;
+    top: 7vw;
 }
 
 .alice {
@@ -47,7 +48,7 @@ font-size: 1.5vw;
         6px 0 0 #F0C0BF;  
     position: relative; 
     z-index: 1;
-    top: 80px;
+    top: 7vw;
 }
 
 .portfolio { 
@@ -58,7 +59,7 @@ font-size: 1.5vw;
     color: #b36c65;
     letter-spacing: 5px;
     position: relative;
-    top: 10px;
+    top: 2.5vw;
     z-index: 0;
     padding: 0%;
     margin: 0%;
@@ -96,6 +97,7 @@ body > header > nav > ul {
     position: relative;
     margin: 0; 
     padding: 10px;
+    font-size: 2vw;
 }
 
 /* adding hover effect for links */
@@ -130,7 +132,7 @@ body > header > nav > ul {
 .aboutme > h2 {
     text-align: left;
     padding-left: 20px;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: "Gilda+Display";
     color: #b36c65;
     letter-spacing: 1px;
@@ -145,6 +147,7 @@ body > header > nav > ul {
     color: #b36c65;
     font-family: "Gilda+Display";
     margin: 0px;
+    font-size: 2vw;
 }
 
 .aboutmetext {
@@ -153,7 +156,7 @@ body > header > nav > ul {
     color: black;
     font-family: "Gilda+Display";
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
 
 }
 
@@ -204,7 +207,6 @@ body > header > nav > ul {
     color: #b36c65;
     letter-spacing: 1px;
     margin: 0%;
-
     padding-top: 40px; 
 }
 
@@ -213,7 +215,7 @@ body > header > nav > ul {
 .educationgrid {
     display: grid;
     grid-template-areas: 
-    "title details ";
+    "title details";
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 0;
@@ -341,7 +343,7 @@ body > header > nav > ul {
 }
 
 .image-list > span {
-    font-size: 16px;
+    font-size: 3vw;
     color: #b36c65;
     text-decoration: none;
 }
