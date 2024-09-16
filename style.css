@@ -290,10 +290,56 @@ body > header > nav > ul {
 
 
 /* Skills section */
-.skills > img {
-    width: 100%;
-    height: auto;
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
+.list-wrapper {
+    width: 45%;
+}
+
+.list-wrapper > h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5vw;
+    color: #b36c65;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.image-list { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.image-list > li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    min-height: 120px;
+}
+
+.image-list img { 
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.image-list > span {
+    font-size: 16px;
+    color: #b36c65;
+    text-decoration: none;
+}
+
+
 
 /* Graphic design examples */
 .graphics > img {
