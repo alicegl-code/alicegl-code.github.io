@@ -302,15 +302,22 @@ body > header > nav > ul {
 }
 
 .list-wrapper > h2 {
+    display: block;
     text-align: center;
-    margin-bottom: 15px;
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: #b36c65;
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
+    background-color: #dfd3ca;
+    padding: 20px;
+    border-radius: 10px;
+
+    margin: 40px auto;
+    width: auto;
+    max-width: 100%
     
 }
+
+
 
 .image-list { 
     list-style-type: none;
